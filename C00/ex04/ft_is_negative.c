@@ -6,7 +6,7 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 21:25:37 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/13 21:41:44 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/16 15:59:21 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,12 @@ void	ft_is_negative(int n)
 		write(1, "N", 1);
 	}
 }
+
+/*
+int	main(void)
+{
+	ft_is_negative(-23);
+	ft_is_negative(42);
+	return (0);
+}
+*/

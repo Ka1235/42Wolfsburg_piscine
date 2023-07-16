@@ -6,7 +6,7 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 19:03:11 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/15 18:26:52 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/16 15:56:43 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@ void	ft_print_alphabet(void)
 	}
 }
 
+/*
 int	main(void)
 {
 	ft_print_alphabet();
 	return (0);
 }
+*/

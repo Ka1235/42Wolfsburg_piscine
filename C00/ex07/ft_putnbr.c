@@ -6,7 +6,7 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 16:50:37 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/15 18:20:28 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/16 16:08:52 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,10 @@ void	ft_putnbr(int nb)
 	}
 	ft_putchar(nb % 10 + 48);
 }
+
+/*
+int	main(void)
+{
+	ft_putnbr();
+	return (0);
+}*/

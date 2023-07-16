@@ -6,7 +6,7 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 19:18:39 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/15 18:24:43 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/16 15:57:23 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@ void	ft_print_reverse_alphabet(void)
 	}
 }
 
-int	main(void)
+/*
+	int	main(void)
 {
 	ft_print_reverse_alphabet();
 	return (0);
 }
+*/
