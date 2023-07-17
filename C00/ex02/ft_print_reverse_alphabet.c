@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabbet.c                       :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 19:18:39 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/16 19:52:15 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/17 15:48:43 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@ void	ft_print_reverse_alphabet(void)
 	}
 }
 
+/*
 int	main(void)
 {
 	ft_print_reverse_alphabet();
 	return (0);
 }
+*/
