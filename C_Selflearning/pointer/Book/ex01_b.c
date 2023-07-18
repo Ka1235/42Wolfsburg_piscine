@@ -6,11 +6,15 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 17:05:23 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/17 17:27:36 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/18 15:45:59 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+
+/*Écrire, de deux façons différentes,
+	un programme qui lit 10 nombres entiers dans un tableau avant d’en rechercher le plus grand et le plus petit :
+● en utilisant le « formalisme pointeur », chaque fois que cela est possible.*/
 
 int	minimun(int *t)
 {

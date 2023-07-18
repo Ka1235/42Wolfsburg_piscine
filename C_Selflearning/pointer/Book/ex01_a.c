@@ -6,11 +6,15 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:41:17 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/17 17:02:06 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/18 15:46:03 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+
+/*Écrire, de deux façons différentes,
+	un programme qui lit 10 nombres entiers dans un tableau avant d’en rechercher le plus grand et le plus petit :
+● en utilisant uniquement le « formalisme tableau » */
 
 int	main(void)
 

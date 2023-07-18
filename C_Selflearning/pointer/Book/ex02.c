@@ -6,11 +6,15 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 17:30:30 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/17 17:58:20 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/18 15:47:32 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+
+/*Écrire une fonction qui ne renvoie aucune valeur et qui détermine la valeur maximale et la valeur minimale d’un tableau d’entiers (à un indice) de taille quelconque. Il faudra donc prévoir 4 arguments : le tableau,
+	sa dimension, le maximum et le minimum.
+Écrire un petit programme d’essai.*/
 
 void	fct(int *tab, int size, int *p_min, int *p_max)
 {

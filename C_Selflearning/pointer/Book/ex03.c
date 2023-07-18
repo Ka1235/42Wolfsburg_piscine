@@ -6,12 +6,13 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 18:12:38 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/17 18:49:55 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/18 15:48:08 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
+/*Écrire une fonction permettant de trier par ordre croissant les valeurs entières d’un tableau de taille quelconque (transmise en argument). Le tri pourra se faire par réarrangement des valeurs au sein du tableau lui-même.*/
 void	tri_croissant(int *tab, int size)
 {
 	int i, j;
