@@ -6,40 +6,57 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 23:01:36 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/19 16:24:02 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/23 01:32:17 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	lowcase(char c)
+int	lowercase(char c)
 {
 	if (c >= 97 && c <= 122)
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
+}
+
+int	uppercase(char c)
+{
+	if (c >= 65 && c <= 90)
+		return (1);
+	else
+		return (0);
+}
+
+int	alpha_numeric(char c)
+{
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
+		return (1);
+	else
+		return (0);
 }
 
 char	*ft_strcapitalize(char *str)
 {
-	int	counter;
+	int	current;
 
-	counter = 1;
-	if (lowcase(str[0]) == 1)
+	current = 1;
+	if (lowercase(str[0]) == 1)
 	{
 		str[0] -= 32;
 	}
-	while (str[counter] != '\0')
+	while (str[current] != '\0')
 	{
-		if (str[counter - 1] == 32 && lowcase(str[counter]) == 1)
+		if (alpha_numeric(str[current]) == 1)
 		{
-			str[counter] -= 32;
+			if (alpha_numeric(str[current - 1]) == 1
+				&& uppercase(str[current]) == 1)
+				str[current] += 32;
+			if (alpha_numeric(str[current - 1]) == 0
+				&& lowercase(str[current]) == 1)
+				str[current] -= 32;
 		}
-		counter++;
+		current++;
 	}
 	return (str);
 }
@@ -47,7 +64,7 @@ char	*ft_strcapitalize(char *str)
 /* int	main(void)
 {
 	char *x;
-	char	str[] = "hello, je veaux manger la babnane de 42_Wolfsburg";
+	char	str[] = "salut, commEnt tu vas ? 42Mots quarAnte-deux; cinquante+et+un";
 	printf("%s \n", str);
 	x = ft_strcapitalize(str);
 	printf("%s\n", x);

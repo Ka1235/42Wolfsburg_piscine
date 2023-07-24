@@ -6,13 +6,14 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 23:58:54 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/19 17:00:05 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/24 03:12:25 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-unsigned int	size_of(char *str)
+unsigned int	size_of(const char *str)
+// Corrected function signature with const char* for input string
 {
 	unsigned int	counter;
 
@@ -25,23 +26,25 @@ unsigned int	size_of(char *str)
 }
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	unsigned int				counter;
-	unsigned int				src_length;
-	unsigned int				dest_length;
 
+{
+	unsigned int	counter;
+	unsigned int	src_length;
+	unsigned int	dest_length;
+
+	dest_length = size;
 	counter = 0;
 	src_length = size_of(src);
-	dest_length = size;
-	while (src_length != 0 && dest_length != 0 && counter < size - 1)
+	if (size != 0)
 	{
-		dest[counter] = src[counter];
-		src_length--;
-		dest_length--;
-		counter++;
+		while (src_length > 0 && counter < size - 1)
+		{
+			dest[counter] = src[counter];
+			counter++;
+		}
+		dest[counter] = '\0';
 	}
-	dest[size - 1] = '\0';
-	return (size_of(src));
+	return (src_length);
 }
 
 /* int main(void)
