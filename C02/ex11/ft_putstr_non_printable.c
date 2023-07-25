@@ -6,7 +6,7 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 12:20:44 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/23 02:54:14 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/25 10:48:25 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ void	ft_putstr_non_printable(char *str)
 		else
 		{
 			write(1, "\\", 1);
-			ft_putchar("01234567789abcdef"[str[cpt] / 16]);
-			ft_putchar("01234567789abcdef"[str[cpt] % 16]);
+			ft_putchar("0123456789abcdef"[str[cpt] / 16]);
+			ft_putchar("0123456789abcdef"[str[cpt] % 16]);
 		}
 		cpt++;
 	}
