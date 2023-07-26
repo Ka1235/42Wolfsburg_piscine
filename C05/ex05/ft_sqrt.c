@@ -6,7 +6,7 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 04:24:23 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/24 05:30:37 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/26 10:46:58 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,23 @@
 
 int	ft_sqrt(int nb)
 {
-	int	root;
+	int			low;
+	int			high;
+	long long	mid;
 
-	root = 1;
 	if (nb <= 0)
 		return (0);
-	while (root * root <= nb)
+	low = 1;
+	high = nb;
+	while (low <= high)
 	{
-		if (root * root == nb)
-			return (root);
-		root++;
+		mid = low + (high - low) / 2;
+		if (mid * mid == nb)
+			return (mid);
+		if (mid * mid < nb)
+			low = mid + 1;
+		else
+			high = mid - 1;
 	}
 	return (0);
 }
