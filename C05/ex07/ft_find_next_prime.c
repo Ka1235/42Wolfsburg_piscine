@@ -6,7 +6,7 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 05:55:24 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/26 12:56:40 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/27 15:00:53 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,15 +37,11 @@ int	ft_is_prime(int nb)
 
 int	ft_find_next_prime(int nb)
 {
-	int	next_prime;
-
-	next_prime = nb;
-	while (0 != 1)
-	{
-		if (ft_is_prime(next_prime) == 1)
-			return (next_prime);
-		next_prime++;
-	}
+	if (nb <= 2)
+		return (2);
+	while (ft_is_prime(nb) != 1 && nb < 2147483647)
+		nb++;
+	return (nb);
 }
 
 /* int	main(void)
