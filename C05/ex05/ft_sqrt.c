@@ -6,7 +6,7 @@
 /*   By: jnguecho <jnguecho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 04:24:23 by jnguecho          #+#    #+#             */
-/*   Updated: 2023/07/26 18:47:33 by jnguecho         ###   ########.fr       */
+/*   Updated: 2023/07/27 22:50:27 by jnguecho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ int	ft_sqrt(int nb)
 	return (0);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int x;
-	x = ft_sqrt(170);
+	x = ft_sqrt(2);
 	printf("%d", x);
-} */
+}
